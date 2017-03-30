@@ -1,9 +1,10 @@
 Pod::Spec.new do |s|
 s.name             = "OBJson"
-s.version          = "0.0.1"
-s.summary          = "Custom Category used on iOS."
+s.version          = "0.0.2"
+s.summary          = "json parse to object,create json by object"
 s.description      = <<-DESC
-                     Custom Category used on iOS, which implement by Objective-C.
+					 1.create object by json
+					 2.create json by object
                      DESC
 s.homepage         = "https://github.com/FH910619/OBJson"
 s.license          = 'MIT'

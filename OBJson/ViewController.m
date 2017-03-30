@@ -20,16 +20,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    NSString* jsonString = [NSString stringWithFormat:@"{%@:%@}",@"\'name\'",@"\'test\'"];
+    id object = [OBJsonParse parseJsonString:jsonString ClassName:@"Test"];
+    if([object isKindOfClass:[Test class]]){
+        NSLog(@"parseJsonString this is test name is %@",((Test*)object).name);
+    }
+    
+    
     id ob = [OBJsonParse parseDictionary:@{@"name":@"test"} ClassName:@"Test"];
     
     if([ob isKindOfClass:[Test class]]){
-        NSLog(@"this is test name is %@",((Test*)ob).name);
+        NSLog(@"parseDictionary this is test name is %@",((Test*)ob).name);
     }
     
     Test* test = [[Test alloc]init];
     test.name=@"create json test";
     NSString* str = [OBJsonCreate createJsonStringByObject:test];
-    NSLog(@"json is %@",str);
+    if(str&&str.length>0)
+        NSLog(@"json is %@",str);
     
     
 }

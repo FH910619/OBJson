@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Test.h"
 #import "OBJsonParse.h"
+#import "OBJsonCreate.h"
 
 @interface ViewController ()
 
@@ -24,6 +25,13 @@
     if([ob isKindOfClass:[Test class]]){
         NSLog(@"this is test name is %@",((Test*)ob).name);
     }
+    
+    Test* test = [[Test alloc]init];
+    test.name=@"create json test";
+    NSString* str = [OBJsonCreate createJsonStringByObject:test];
+    NSLog(@"json is %@",str);
+    
+    
 }
 
 

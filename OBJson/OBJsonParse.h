@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NSObject+PropertyListing.h"
 #import <objc/runtime.h>
 @interface OBJsonParse : NSObject
 
@@ -30,5 +29,6 @@
  @return 实体对象
  */
 +(id)parseDictionary:(NSDictionary*)dic ClassName:(NSString*)className;
+
 
 @end

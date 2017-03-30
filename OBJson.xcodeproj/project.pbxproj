@@ -16,6 +16,7 @@
 		044624C71E8B98E800143F4A /* NSObject+PropertyListing.m in Sources */ = {isa = PBXBuildFile; fileRef = 044624C61E8B98E800143F4A /* NSObject+PropertyListing.m */; };
 		044624CA1E8B9D0400143F4A /* OBJsonParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 044624C91E8B9D0400143F4A /* OBJsonParse.m */; };
 		044624CD1E8B9F7300143F4A /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 044624CC1E8B9F7300143F4A /* Test.m */; };
+		044624D01E8CBF1400143F4A /* OBJsonCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = 044624CF1E8CBF1400143F4A /* OBJsonCreate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		044624C91E8B9D0400143F4A /* OBJsonParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBJsonParse.m; sourceTree = "<group>"; };
 		044624CB1E8B9F7300143F4A /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 		044624CC1E8B9F7300143F4A /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
+		044624CE1E8CBF1400143F4A /* OBJsonCreate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBJsonCreate.h; sourceTree = "<group>"; };
+		044624CF1E8CBF1400143F4A /* OBJsonCreate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBJsonCreate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +101,8 @@
 				044624C91E8B9D0400143F4A /* OBJsonParse.m */,
 				044624CB1E8B9F7300143F4A /* Test.h */,
 				044624CC1E8B9F7300143F4A /* Test.m */,
+				044624CE1E8CBF1400143F4A /* OBJsonCreate.h */,
+				044624CF1E8CBF1400143F4A /* OBJsonCreate.m */,
 			);
 			name = bean;
 			sourceTree = "<group>";
@@ -180,6 +185,7 @@
 				044624CD1E8B9F7300143F4A /* Test.m in Sources */,
 				044624AF1E8B98AE00143F4A /* main.m in Sources */,
 				044624C71E8B98E800143F4A /* NSObject+PropertyListing.m in Sources */,
+				044624D01E8CBF1400143F4A /* OBJsonCreate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +342,7 @@
 				044624C31E8B98AE00143F4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
